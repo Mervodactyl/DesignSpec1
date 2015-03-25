@@ -11,6 +11,7 @@
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+}
 
 html, body {
   height: 100%;
@@ -25,26 +26,62 @@ nav {
   background-color: pink;
 }
 
+h2 {
+  background-color: #F5BCA9;
+}
+
+ul {
+  background-color: #01DF3A;
+}
+
+li {
+  background-color: #FA58F4;
+}
+
 header {
   background-color: orange;
+}
+
+p {
+  background-color: #00FFFF;
 }
 
 div #me {
   background-color: yellow;
 }
+  div #me p {
+    background-color: #F6CEF5;
+  }
+
+h1 {
+  background-color: #FE2E2E;
+}
+
+a:link {
+  backgound-color: #F6CEF5;
+}
 
 main {
   background-color: green;
 }
+  main p {
+    background-color: #FE2E64;
+  }
 
 div {
   background-color: red;
 }
 
-map {
+#map {
   background-color: purple;
 }
+  #map p {
+    background-color: #FE9A2E;
+  }
 
 footer {
   background-color: goldenrod;
 }
+  footer p {
+    background-color: #00FF00;
+  }
