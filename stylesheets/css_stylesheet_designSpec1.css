@@ -1,0 +1,50 @@
+/*  CSS stylesheet for - portfolio/designSpec1/design1.
+*                        https://github.com/Mervodactyl/DesignSpec1
+*
+*   <style type="text/css">
+*
+*   Standard size
+=============================================================================*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+html, body {
+  height: 100%;
+  height: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: blue;
+}
+
+nav {
+  background-color: pink;
+}
+
+header {
+  background-color: orange;
+}
+
+div #me {
+  background-color: yellow;
+}
+
+main {
+  background-color: green;
+}
+
+div {
+  background-color: red;
+}
+
+map {
+  background-color: purple;
+}
+
+footer {
+  background-color: goldenrod;
+}
