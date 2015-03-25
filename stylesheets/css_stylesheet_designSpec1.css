@@ -19,69 +19,112 @@ html, body {
   min-height: 100%;
   padding: 0;
   margin: 0;
-  background-color: blue;
+  /*background-color: blue;*/
 }
 
 nav {
+  height: 15%;
+  padding: 1%;
+  margin: 0;
   background-color: pink;
 }
-
-h2 {
-  background-color: #F5BCA9;
-}
-
-ul {
-  background-color: #01DF3A;
-}
-
-li {
-  background-color: #FA58F4;
-}
+  nav h2 {
+    float: left;
+    padding: 1%;
+    margin: 0;
+    background-color: #F5BCA9;
+  }
+    nav ul {
+      float: right;
+      padding: 1%;
+      margin: 0;
+      list-style-type: none;
+      background-color: #01DF3A;
+    }
+      nav ul li {
+        display: inline;
+        float: left;
+        padding: 1%;
+        margin: 0;
+        background-color: #FA58F4;
+      }
 
 header {
+  height: 75%;
+  padding: 1%;
+  margin: 0;
   background-color: orange;
 }
 
 p {
+  padding: 1%;
+  margin: 0;
   background-color: #00FFFF;
 }
 
-div #me {
+#me {
+  clear: left;
+  height: 65%;
+  padding: 1%;
+  margin: 0;
   background-color: yellow;
 }
-  div #me p {
+  #me p {
+    padding: 1%;
+    margin: 0;
     background-color: #F6CEF5;
   }
 
 h1 {
+  padding: 1%;
+  margin: 0;
   background-color: #FE2E2E;
 }
 
 a:link {
+  padding: 1%;
+  margin: 0;
   backgound-color: #F6CEF5;
 }
 
 main {
+  height: 65%;
+  padding: 1%;
+  margin: 0;
   background-color: green;
 }
   main p {
+    padding: 1%;
+    margin: 0;
     background-color: #FE2E64;
   }
 
 div {
-  background-color: red;
+  padding: 1%;
+  margin: 0;
+  background-color: yellow;
 }
 
 #map {
+  height: 65%;
+  padding: 1%;
+  margin: 0;
   background-color: purple;
 }
   #map p {
+    padding: 1%;
+    margin: 0;
     background-color: #FE9A2E;
   }
 
 footer {
+  height: 10%;
+  padding: 1%;
+  margin: 0;
   background-color: goldenrod;
 }
   footer p {
+    padding: 1%;
+    margin: 0;
     background-color: #00FF00;
   }
