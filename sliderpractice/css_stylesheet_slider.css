@@ -1,0 +1,46 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*slider structure*/
+#slider {
+  background: #000
+  border: 5px solid #eaeaea;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+  height: 320px;
+  width: 680px;
+  margin: 40px auto 0;
+  overflow: visible;
+  position: relative;
+}
+
+/*hide all outside the slider*/
+#mask {
+  overflow: hidden;
+  height: 320px;
+}
+
+/*image list and sorting*/
+slider ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+slider li {
+  height: 680px;
+  width: 320px;
+  position: absolute;
+  top: -320px; /*this is the original position outside of the slider*/
+  list-style: none;
+}
+
+slider li.animation1 {
+  animantion: cycle 10s linear infinite;
+}
+
+slider li.animation2 {
+  animantion: cycle 10s linear infinite;
+}
