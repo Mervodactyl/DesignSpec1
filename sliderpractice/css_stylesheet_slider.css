@@ -1,5 +1,10 @@
 /* SLIDER STRUCTURE */
 
+img {
+  height: 320px;
+  width: 680px;
+}
+
 #slider {
    background: #000;
    border: 5px solid #eaeaea;
