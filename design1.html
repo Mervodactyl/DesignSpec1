@@ -6,15 +6,17 @@
     <link href="stylesheets/css_stylesheet_designSpec1.css" type="text/css" rel="stylesheet">
   </head>
   <body>
-    <nav>
+    <header>
       <h2>Mervé Silk</h2>
-        <ul>
-          <li><a href="">CV</a></li>
-          <li><a href="">EXAMPLE 2</a></li>
-          <li><a href="">EXAMPLE 3</a></li>
-          <li><a href="">EXAMPLE 4</a></li>
-        </ul>
-    </nav>
+        <nav>
+          <ul>
+            <li><a href="">CV</a></li>
+            <li><a href="">EXAMPLE 2</a></li>
+            <li><a href="">EXAMPLE 3</a></li>
+            <li><a href="">EXAMPLE 4</a></li>
+          </ul>
+        </nav>
+      </header>
 
 <!-- slider business  -->
 
@@ -22,36 +24,40 @@
         <p>READ MORE</p> -->
 
 
-      <header id="container"> <!-- <div class="container"> -->
+      <div id="images-section"> <!-- <div class="container"> -->
         <div id="content-slider">  <!-- <div id="content-slider"> -->
+
+
+
+
           <div id="slider">  <!-- Slider container -->
-            <div id="mask">  <!-- Mask -->
+            <div id="hidden-overflow">  <!-- Mask -->
               <ul>
-                <li id="first">
+                <li id="first" class="first-animation"> <!-- 'id' refers to the info bar, the 'class' to the animation that will happen -->
                   <a href="#">
                   <img src="./images/diving.jpg" alt="diving image" title="under the sea">
                   </a>
                   <div class="info"><p>Here is some info about the picture chosen</p></div>
                 </li>
-                <li id="second">
+                <li id="second" class="second-animation">
                   <a href="#">
                   <img src="./images/ninja.jpg" alt="ninja picture" title="haiiiyaaaaa!">
                   </a>
                   <div class="info"><p>Here is some info about the picture chosen</p></div>
                 </li>
-                <li id="third">
+                <li id="third" class="third-animation">
                   <a href="#">
                   <img src="./images/nesquik.jpg" alt="giant container of chocolate" title="the little things in life">
                   </a>
                   <div class="info"><p>Here is some info about the picture chosen</p></div>
                 </li>
-                <li id="fourth">
+                <li id="fourth" class="fourth-animation">
                   <a href="#">
                   <img src="./images/stormtrooper.jpg" alt="starwars storm troopers arrest" title="surrender or else">
                   </a>
                   <div class="info"><p>Here is some info about the picture chosen</p></div>
                 </li>
-                <li id="fifth">
+                <li id="fifth" class="fifth-animation">
                   <a href="#">
                   <img src="./images/mountaintop.jpg" alt="on top of a mountain" title="conqueror of the world">
                   </a>
@@ -60,9 +66,10 @@
               </ul>
             </div>  <!-- End Mask -->
             <div class="progress-bar"></div>  <!-- Progress Bar -->
-          </div>  <!-- End Slider Container -->
+          </div>  <!-- Slider Container -->
+
         </div>  <!-- content-slider -->
-      </header> <!-- container -->
+      </div> <!-- container -->
 
 
 
