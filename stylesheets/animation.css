@@ -1,0 +1,160 @@
+/*  CSS stylesheet for - portfolio/designSpec1/design1.
+*                        https://github.com/Mervodactyl/DesignSpec1
+*
+*   <style type="text/css">
+
+* ANIMATION for IMAGES on Slider
+=============================================================================*/
+
+@keyframes pic-one {
+  0%  { top:0px; }
+  4%  { top:0px; }
+  16% { top:0px; opacity:1; z-index:0; }
+  20% { top:420px; opacity:0; z-index:0; }
+  21% { top:-420px; opacity:0; z-index:-1; }
+  50% { top:-420px; opacity:0; z-index:-1; }
+  92% { top:-420px; opacity:0; z-index:0; }
+  96% { top:-420px; opacity:0; }
+  100%{ top:0px; opacity:1; }
+
+}
+@keyframes pic-two {
+  0%  { top:-420px; opacity:0; }
+  16% { top:-420px; opacity:0; }
+  20% { top:0px; opacity:1; }
+  24% { top:0px; opacity:1; }
+  36% { top:0px; opacity:1; z-index:0; }
+  40% { top:420px; opacity:0; z-index:0; }
+  41% { top:-420px; opacity:0; z-index:-1; }
+  100%{ top:-420px; opacity:0; z-index:-1; }
+}
+@keyframes pic-three {
+  0%  { top:-420px; opacity:0; }
+  36% { top:-420px; opacity:0; }
+  40% { top:0px; opacity:1; }
+  44% { top:0px; opacity:1; }
+  56% { top:0px; opacity:1; z-index:0; }
+  60% { top:420px; opacity:0; z-index:0; }
+  61% { top:-420px; opacity:0; z-index:-1; }
+  100%{ top:-420px; opacity:0; z-index:-1; }
+}
+@keyframes pic-four {
+  0%  { top:-420px; opacity:0; }
+  56% { top:-420px; opacity:0; }
+  60% { top:0px; opacity:1; }
+  64% { top:0px; opacity:1; }
+  76% { top:0px; opacity:1; z-index:0; }
+  80% { top:420px; opacity:0; z-index:0; }
+  81% { top:-420px; opacity:0; z-index:-1; }
+  100%{ top:-420px; opacity:0; z-index:-1; }
+}
+@keyframes pic-five {
+  0%  { top:-420px; opacity:0; }
+  76% { top:-420px; opacity:0; }
+  80% { top:0px; opacity:1; }
+  84% { top:0px; opacity:1; }
+  96% { top:0px; opacity:1; z-index:0; }
+  100%{ top:420px; opacity:0; z-index:0; }
+}
+
+  @-webkit-keyframes pic-one {
+    0%  { top:0px; }
+    4%  { top:0px; }
+    16% { top:0px; opacity:1; z-index:0; }
+    20% { top:420px; opacity:0; z-index:0; }
+    21% { top:-420px; opacity:0; z-index:-1; }
+    50% { top:-420px; opacity:0; z-index:-1; }
+    92% { top:-420px; opacity:0; z-index:0; }
+    96% { top:-420px; opacity:0; }
+    100%{ top:0px; opacity:1; }
+
+  }
+  @-webkit-keyframes pic-two {
+    0%  { top:-420px; opacity:0; }
+    16% { top:-420px; opacity:0; }
+    20% { top:0px; opacity:1; }
+    24% { top:0px; opacity:1; }
+    36% { top:0px; opacity:1; z-index:0; }
+    40% { top:420px; opacity:0; z-index:0; }
+    41% { top:-420px; opacity:0; z-index:-1; }
+    100%{ top:-420px; opacity:0; z-index:-1; }
+  }
+  @-webkit-keyframes pic-three {
+    0%  { top:-420px; opacity:0; }
+    36% { top:-420px; opacity:0; }
+    40% { top:0px; opacity:1; }
+    44% { top:0px; opacity:1; }
+    56% { top:0px; opacity:1; z-index:0; }
+    60% { top:420px; opacity:0; z-index:0; }
+    61% { top:-420px; opacity:0; z-index:-1; }
+    100%{ top:-420px; opacity:0; z-index:-1; }
+  }
+  @-webkit-keyframes pic-four {
+    0%  { top:-420px; opacity:0; }
+    56% { top:-420px; opacity:0; }
+    60% { top:0px; opacity:1; }
+    64% { top:0px; opacity:1; }
+    76% { top:0px; opacity:1; z-index:0; }
+    80% { top:420px; opacity:0; z-index:0; }
+    81% { top:-420px; opacity:0; z-index:-1; }
+    100%{ top:-420px; opacity:0; z-index:-1; }
+  }
+  @-webkit-keyframes pic-five {
+    0%  { top:-420px; opacity:0; }
+    76% { top:-420px; opacity:0; }
+    80% { top:0px; opacity:1; }
+    84% { top:0px; opacity:1; }
+    96% { top:0px; opacity:1; z-index:0; }
+    100%{ top:420px; opacity:0; z-index:0; }
+  }
+
+    @-moz-keyframes pic-one {
+      0%  { top:0px; }
+      4%  { top:0px; }
+      16% { top:0px; opacity:1; z-index:0; }
+      20% { top:420px; opacity:0; z-index:0; }
+      21% { top:-420px; opacity:0; z-index:-1; }
+      50% { top:-420px; opacity:0; z-index:-1; }
+      92% { top:-420px; opacity:0; z-index:0; }
+      96% { top:-420px; opacity:0; }
+      100%{ top:0px; opacity:1; }
+
+    }
+    @-moz-keyframes pic-two {
+      0%  { top:-420px; opacity:0; }
+      16% { top:-420px; opacity:0; }
+      20% { top:0px; opacity:1; }
+      24% { top:0px; opacity:1; }
+      36% { top:0px; opacity:1; z-index:0; }
+      40% { top:420px; opacity:0; z-index:0; }
+      41% { top:-420px; opacity:0; z-index:-1; }
+      100%{ top:-420px; opacity:0; z-index:-1; }
+    }
+    @-moz-keyframes pic-three {
+      0%  { top:-420px; opacity:0; }
+      36% { top:-420px; opacity:0; }
+      40% { top:0px; opacity:1; }
+      44% { top:0px; opacity:1; }
+      56% { top:0px; opacity:1; z-index:0; }
+      60% { top:420px; opacity:0; z-index:0; }
+      61% { top:-420px; opacity:0; z-index:-1; }
+      100%{ top:-420px; opacity:0; z-index:-1; }
+    }
+    @-moz-keyframes pic-four {
+      0%  { top:-420px; opacity:0; }
+      56% { top:-420px; opacity:0; }
+      60% { top:0px; opacity:1; }
+      64% { top:0px; opacity:1; }
+      76% { top:0px; opacity:1; z-index:0; }
+      80% { top:420px; opacity:0; z-index:0; }
+      81% { top:-420px; opacity:0; z-index:-1; }
+      100%{ top:-420px; opacity:0; z-index:-1; }
+    }
+    @-moz-keyframes pic-five {
+      0%  { top:-420px; opacity:0; }
+      76% { top:-420px; opacity:0; }
+      80% { top:0px; opacity:1; }
+      84% { top:0px; opacity:1; }
+      96% { top:0px; opacity:1; z-index:0; }
+      100%{ top:420px; opacity:0; z-index:0; }
+    }
