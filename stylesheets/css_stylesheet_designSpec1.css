@@ -5,12 +5,15 @@
 *
 *   Standard size
 =============================================================================*/
-/*@import url("animation.css");*/
+@import url("normalize.css");
+@import url("keyframes-animation.css");
 
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+          /*padding: 0;
+          margin: 0;*/
 }
 
 html, body {
@@ -22,38 +25,42 @@ html, body {
   background-color: blue;
 }
 
+img {
+  padding: 0;
+  margin: 0;
+  height: 450px;
+  width: 1000px;
+}
+
 header {
   height: 55px;
-  padding: 1%;
   margin: 0;
+  padding: 0;
   background-color: pink;
 }
   header h2 {
     float: left;
-    margin: 0 0 0 5%;
     background-color: #F5BCA9;
   }
     nav {
-      float: right;
       margin: 0;
-      background-color: #01DF3A;
+      padding: 0;
+      background-color: #FFF;
     }
       nav ul {
         float: left;
-        padding: 1%;
-        margin: 0 0 0 0%;
-        list-style-type: none;
+        margin: 0;
+        list-style: none;
       }
         nav ul li {
           float: left;
-          padding: 1%;
           margin: 0;
-          display: inline-block;
+          display: inline; /* -block */
           background-color: red;
           vertical-align: top;
         }
 
-#slider { /* slider container  - possibly the 'images-section'.... */
+#image-slider { /* Slider Container */
   background-color: orange;
   height: 420px;
   width: 100%;
@@ -61,41 +68,41 @@ header {
   margin: 0;
   overflow: visible;
 }
-  #slider ul {
+  #image-slider ul {
     float: left;
     padding: 0;
     margin: 0;
     position: relative;
   }
-    #slider ul li {
+    #image-slider ul li {
       height: 420px;
       width: 100%;
       position: absolute;
-      left: -420px; /* original position, outside the slider */
+      left: -420px;
       list-style: none;
     }
-      /* ANIMATION */
-      #slider li.first-animation {
+      /* #slider ANIMATION */
+      #image-slider li.first-animation {
         animation: pic-one 25s linear infinite;
         -moz-animation: pic-one 25s linear infinite;
         -webkit-animation: pic-one 25s linear infinite;
       }
-      #slider li.second-animation {
+      #image-slider li.second-animation {
         animation: pic-two 25s linear infinite;
         -moz-animation: pic-two 25s linear infinite;
         -webkit-animation: pic-two 25s linear infinite;
       }
-      #slider li.third-animation {
+      #image-slider li.third-animation {
         animation: pic-three 25s linear infinite;
         -moz-animation: pic-three 25s linear infinite;
         -webkit-animation: pic-three 25s linear infinite;
       }
-      #slider li.fourth-animation {
+      #image-slider li.fourth-animation {
         animation: pic-four 25s linear infinite;
         -moz-animation: pic-four 25s linear infinite;
         -webkit-animation: pic-four 25s linear infinite;
       }
-      #slider li.fifth-animation {
+      #image-slider li.fifth-animation {
         animation: pic-five 25s linear infinite;
         -moz-animation: pic-five 25s linear infinite;
         -webkit-animation: pic-five 25s linear infinite;
@@ -108,7 +115,6 @@ header {
   background-color: blue;
 }
 
-
 .progress-bar {
   position: absolute;
   top: 460px;
@@ -116,11 +122,60 @@ header {
   width: 100%;
   height: 15px;
   background: purple;
-    /* ANIMATION */
+    /* .progress-bar ANIMATION */
     animation: loading 25s ease-out infinite;
     -moz-animation: loading 25s ease-out infinite;
     -webkit-animation: loading 25s ease-out infinite;
 }
+
+
+
+
+
+
+#info-slider .info {
+  /*background:rgba(0,0,0,0.7);*/
+  position: relative;
+  background-color: orange;
+  width: 400px;
+  height: 60px;
+  bottom: 175px;
+  left: -400px;
+  /*animation*/
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+#info-slider .info p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 60px;
+  padding: 0 0 0 20px;
+}
+#info-slider li#first:hover .info,
+#info-slider li#second:hover .info,
+#info-slider li#third:hover .info,
+#info-slider li#fourth:hover .info,
+#info-slider li#fifth:hover .info {
+  left: 0px;
+}
+
+#info-slider:hover li,
+#info-slider:hover .progress-bar {
+  animation: paused;
+  -moz-animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+}
+
+
+
+
+
+
+
+
+
 
 p {
   padding: 1%;
@@ -147,10 +202,10 @@ h1 {
   background-color: #FE2E2E;
 }
 
-a:link {
-  padding: 1%;
+a, a:hover, a:visited {
   margin: 0;
-  backgound-color: #F6CEF5;
+  text-decoration: none;
+  background-color: #F6CEF5;
 }
 
 main {
