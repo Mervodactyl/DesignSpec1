@@ -19,26 +19,23 @@ html, body {
   min-height: 100%;
   padding: 0;
   margin: 0;
-  /*background-color: blue;*/
+  background-color: blue;
 }
 
 header {
-  height: 20%;
+  height: 55px;
   padding: 1%;
   margin: 0;
   background-color: pink;
 }
   header h2 {
     float: left;
-    padding: 1%;
     margin: 0 0 0 5%;
     background-color: #F5BCA9;
   }
     nav {
       float: right;
-      padding: 1%;
       margin: 0;
-      width: 25%;
       background-color: #01DF3A;
     }
       nav ul {
@@ -62,7 +59,7 @@ header {
   overflow: visible;
 }
   #slider ul {
-    float:left;
+    float: left;
     padding: 0;
     margin: 0;
     position: relative;
@@ -106,6 +103,20 @@ header {
   height: 420px;
   padding: 0;
   background-color: blue;
+}
+
+
+.progress-bar {
+  position: absolute;
+  bottom: 600px;
+  padding: 0;
+  width: 100%;
+  height: 15px;
+  background: purple;
+    /* ANIMATION */
+    animation: loading 25s ease-out infinite;
+    -moz-animation: loading 25s ease-out infinite;
+    -webkit-animation: loading 25s ease-out infinite;
 }
 
 p {
