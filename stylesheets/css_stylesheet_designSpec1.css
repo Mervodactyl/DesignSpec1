@@ -6,33 +6,28 @@
 *   Standard size
 =============================================================================*/
 @import url("normalize.css");
-@import url("keyframes-animation.css");
+/*@import url("keyframes-animation.css");*/
 
-* {
+*,
+input[type="search"] {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-          /*padding: 0;
-          margin: 0;*/
+
+  box-sizing: border-box;
 }
+
+/** {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}*/
 
 html, body {
-  height: 100%;
-  width: 100%;
-  min-height: 100%;
-  padding: 0;
-  margin: 0;
-  background-color: blue;
+  /*padding: 1%;
+  margin: 0;*/
+  background-color: yellow;
 }
 
-img {
-  padding: 0;
-  margin: 0;
-  height: 450px;
-  width: 1000px;
-}
-
-header {
+/*header {
   height: 55px;
   margin: 0;
   padding: 0;
@@ -58,7 +53,7 @@ header {
           display: inline; /* -block */
           background-color: red;
           vertical-align: top;
-        }
+        }*/
 
 #image-slider { /* Slider Container */
   background-color: orange;
@@ -114,6 +109,12 @@ header {
   padding: 0;
   background-color: blue;
 }
+  #hidden-overflow ul li img {
+    padding: 0;
+    margin: 0;
+    height: 450px;
+    width: 1000px;
+  }
 
 .progress-bar {
   position: absolute;
@@ -128,11 +129,6 @@ header {
     -webkit-animation: loading 25s ease-out infinite;
 }
 
-
-
-
-
-
 #info-slider .info {
   /*background:rgba(0,0,0,0.7);*/
   position: relative;
@@ -141,42 +137,33 @@ header {
   height: 60px;
   bottom: 175px;
   left: -400px;
-  /*animation*/
-  transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-}
-#info-slider .info p {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 60px;
-  padding: 0 0 0 20px;
-}
-#info-slider li#first:hover .info,
-#info-slider li#second:hover .info,
-#info-slider li#third:hover .info,
-#info-slider li#fourth:hover .info,
-#info-slider li#fifth:hover .info {
-  left: 0px;
-}
+    /* ANIMATION */
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    }
+    #info-slider li#first:hover .info,
+    #info-slider li#second:hover .info,
+    #info-slider li#third:hover .info,
+    #info-slider li#fourth:hover .info,
+    #info-slider li#fifth:hover .info {
+      left: 0px;
+    }
+    #info-slider:hover li,
+    #info-slider:hover .progress-bar {
+      animation: paused;
+      -moz-animation-play-state: paused;
+      -webkit-animation-play-state: paused;
+    }
 
-#info-slider:hover li,
-#info-slider:hover .progress-bar {
-  animation: paused;
-  -moz-animation-play-state: paused;
-  -webkit-animation-play-state: paused;
-}
-
-
-
-
-
-
-
-
-
-
+  #info-slider .info p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 60px;
+    padding: 0 0 0 20px;
+  }
+/*
 p {
   padding: 1%;
   margin: 0;
@@ -248,4 +235,4 @@ footer {
     padding: 1%;
     margin: 0;
     background-color: #00FF00;
-  }
+  }*/
