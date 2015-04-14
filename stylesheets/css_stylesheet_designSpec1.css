@@ -48,7 +48,6 @@ header {
         float: left;
         padding: 5px;
         margin: 0;
-        list-style: none;
       }
         nav ul li {
           float: left;
@@ -56,8 +55,11 @@ header {
           margin: 0;
           display: inline; /* -block */
           background-color: red;
-          vertical-align: top;
+          list-style-type: none;
         }
+          nav ul li a:link {
+            text-decoration: none;
+          }
 
 #image-slider { /* Slider Container */
   background-color: orange;
@@ -177,19 +179,37 @@ header {
 }
   #me h1 {
     padding: 5px;
-    margin: 0;
+    margin: 1%;
+    text-align: center;
     background-color: #FE2E2E;
   }
     #me p {
       padding: 5px;
-      margin: 0;
+      margin: 1%;
+      text-align: center;
       background-color: #F6CEF5;
     }
-      #me a, a:hover, a:visited {
-        margin: 0;
-        text-decoration: none;
+      #me ul {
+        padding: 5px;
+        text-align: center;
+        list-style-type: none;
         background-color: #F6CEF5;
       }
+        #me li {
+          padding: 5px;
+          margin: 0;
+          display: inline;
+        }
+          #me li a:link {
+            text-decoration: none;
+            color: ;
+          }
+            #me a:hover {
+              color: ;
+            }
+              #me a:visited {
+                color: ;
+              }
 
 main {
   height: 65%;
