@@ -6,54 +6,58 @@
 *   Standard size
 =============================================================================*/
 @import url("normalize.css");
-/*@import url("keyframes-animation.css");*/
+@import url("keyframes-animation.css");
 
-*,
-input[type="search"] {
-  -webkit-box-sizing: border-box;
-
-  box-sizing: border-box;
+html {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
-/** {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}*/
+    *,
+    *::before,
+    *::after {
+        -webkit-box-sizing: inherit;
+           -moz-box-sizing: inherit;
+                box-sizing: inherit;
+    }
 
 html, body {
-  /*padding: 1%;
-  margin: 0;*/
-  background-color: yellow;
+  background-color: #BEF781;
 }
 
-/*header {
+header {
   height: 55px;
+  padding: 5px;
   margin: 0;
-  padding: 0;
   background-color: pink;
 }
   header h2 {
     float: left;
+    padding: 5px;
+    margin: 8px 0px 0px 30px;
     background-color: #F5BCA9;
   }
     nav {
-      margin: 0;
-      padding: 0;
-      background-color: #FFF;
+      float: right;
+      padding: 5px;
+      margin: 0px 30px 0px 0px;
+      background-color: orange;
     }
       nav ul {
         float: left;
+        padding: 5px;
         margin: 0;
         list-style: none;
       }
         nav ul li {
           float: left;
+          padding: 5px;
           margin: 0;
           display: inline; /* -block */
           background-color: red;
           vertical-align: top;
-        }*/
+        }
 
 #image-slider { /* Slider Container */
   background-color: orange;
@@ -103,13 +107,13 @@ html, body {
         -webkit-animation: pic-five 25s linear infinite;
       }
 
-#hidden-overflow {  /* Mask */
+#image-slider #hidden-overflow {  /* Mask */
   overflow: hidden;
   height: 420px;
   padding: 0;
   background-color: blue;
 }
-  #hidden-overflow ul li img {
+  #image-slider #hidden-overflow ul li img {
     padding: 0;
     margin: 0;
     height: 450px;
@@ -157,43 +161,35 @@ html, body {
     }
 
   #info-slider .info p {
-    color: #fff;
+    color: #black;
     font-size: 24px;
     font-weight: 300;
     line-height: 60px;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 0px;
   }
-/*
-p {
-  padding: 1%;
-  margin: 0;
-  background-color: #00FFFF;
-}
 
 #me {
   clear: left;
   height: 65%;
-  padding: 1%;
-  margin: 0;
+  padding: 5px;
+  margin: 0px;
   background-color: cyan;
 }
-  #me p {
-    padding: 1%;
+  #me h1 {
+    padding: 5px;
     margin: 0;
-    background-color: #F6CEF5;
+    background-color: #FE2E2E;
   }
-
-h1 {
-  padding: 1%;
-  margin: 0;
-  background-color: #FE2E2E;
-}
-
-a, a:hover, a:visited {
-  margin: 0;
-  text-decoration: none;
-  background-color: #F6CEF5;
-}
+    #me p {
+      padding: 5px;
+      margin: 0;
+      background-color: #F6CEF5;
+    }
+      #me a, a:hover, a:visited {
+        margin: 0;
+        text-decoration: none;
+        background-color: #F6CEF5;
+      }
 
 main {
   height: 65%;
@@ -208,9 +204,9 @@ main {
   }
 
 div {
-  padding: 1%;
+  /*padding: 1%;*/
   margin: 0;
-  background-color: yellow;
+  /*background-color: yellow;*/
 }
 
 #map {
@@ -235,4 +231,4 @@ footer {
     padding: 1%;
     margin: 0;
     background-color: #00FF00;
-  }*/
+  }
