@@ -1,4 +1,4 @@
-# DesignSpec1
+# a_little_about_me
 
 First design spec for FrontEnd portfolio, subject: 'About Me' using CSS animation and simple design spec
 
